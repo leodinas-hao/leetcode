@@ -1,0 +1,31 @@
+{
+  "python.formatting.autopep8Args": [
+    "--indent-size=2",
+    "--max-line-length=150",
+    "--ignore=E121"
+  ],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "-s"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.ignorePatterns": [
+    "**/site-packages/**/*.py",
+    ".vscode/*.py",
+    "tests/*.py"
+  ]
+}
