@@ -51,7 +51,8 @@ class Solution:
       next_col = dir[dc][1] + col
 
       if next_row >= n or next_col >= n or matrix[next_row][next_col] != 0:
-        dc = dc + 1 if dc < 3 else 0
+        # dc = dc + 1 if dc < 3 else 0
+        dc = (dc + 1) % 4
         row += dir[dc][0]
         col += dir[dc][1]
       else:
