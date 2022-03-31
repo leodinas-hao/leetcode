@@ -13,3 +13,14 @@ from leetcode.roman_numbers_to_integer import Solution
 def test_roman_to_int(s, i):
   ans = Solution.roman_to_int(s)
   assert ans == i
+
+
+@pytest.mark.parametrize('i,s', [
+  (11, 'XI'),
+  (9, 'IX'),
+  (27, 'XXVII'),
+  (1994, 'MCMXCIV'),
+])
+def test_int_to_roman(i, s):
+  ans = Solution.int_to_roman(i)
+  assert ans == s

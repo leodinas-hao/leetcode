@@ -1,5 +1,5 @@
 '''
-Roman Numbers to Integer
+Roman Numbers to Integer and Vice Versa
 https://medium.com/@akshay_ravindran/100-days-challenge-to-cracking-the-coding-interview-829c38003b1e
 
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
@@ -71,4 +71,31 @@ class Solution:
       else:
         prev = cur
         ans += cur
+    return ans
+
+  @staticmethod
+  def int_to_roman(num: int) -> str:
+    mapping = [
+      (1000, 'M'),
+      (900, 'CM'),
+      (500, 'D'),
+      (400, 'CD'),
+      (100, 'C'),
+      (90, 'XC'),
+      (50, 'L'),
+      (40, 'XL'),
+      (10, 'X'),
+      (9, 'IX'),
+      (5, 'V'),
+      (4, 'IV'),
+      (1, 'I'),
+    ]
+
+    i = 0
+    ans = ''
+    while num != 0:
+      while num >= mapping[i][0]:
+        num -= mapping[i][0]
+        ans += mapping[i][1]
+      i += 1
     return ans
