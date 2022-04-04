@@ -30,7 +30,7 @@ class Solution:
 
   @staticmethod
   def get_smallest_string(n: int, k: int) -> str:
-    result = ['a' for i in range(n)]
+    result = ['a' for _ in range(n)]
     k -= n
 
     while k > 0:
