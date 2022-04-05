@@ -34,6 +34,28 @@ from typing import Dict
 class Solution:
 
   @staticmethod
+  def length_of_longest_substring_2(s: str) -> int:
+    if len(s) < 2:
+      return len(s)
+
+    longest = 1
+    substr = s[0]
+
+    for c in s[1:]:
+      pos = substr.find(c)
+      if pos > -1:
+        # found matching
+        # update substr by removing everything prior the match char & suffix with the char at the end
+        substr = substr[pos + 1:] + c
+      else:
+        # add new char to substr
+        substr += c
+
+      longest = max(longest, len(substr))
+
+    return longest
+
+  @staticmethod
   def length_of_longest_substring(s: str) -> int:
     longest = 0
     pos = 0

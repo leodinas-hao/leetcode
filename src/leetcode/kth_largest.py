@@ -3,7 +3,7 @@ Kth Largest Element in a Stream
 https://medium.com/javarevisited/the-ultimate-guide-to-100-days-of-coding-challenge-e6eff0023f41
 https://leetcode.com/problems/kth-largest-element-in-a-stream/
 
-Design a class to find the kth largest element in a stream. 
+Design a class to find the kth largest element in a stream.
 Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
 Implement KthLargest class:
