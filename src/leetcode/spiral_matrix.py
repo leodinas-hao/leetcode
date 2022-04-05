@@ -2,6 +2,7 @@
 Spiral Matrix II
 
 https://medium.com/javarevisited/draft-100-days-challenge-to-cracking-the-coding-interview-c4de1e81fe1a
+https://leetcode.com/problems/spiral-matrix-ii/
 
 Given a positive integer n, generate a square matrix filled with elements from 1 to n² in spiral order.
 

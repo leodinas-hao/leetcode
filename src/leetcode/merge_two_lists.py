@@ -21,21 +21,21 @@ class Solution:
   @staticmethod
   def merge_two_lists(l1: ListNode, l2: ListNode) -> ListNode:
     head = ListNode(0)  # dummy head
-    ans = head
+    _node = head
 
     while l1 or l2:
       # check if a list ends
       if l1 is None or l2 is None:
-        ans.next = l1 if l2 is None else l2
+        _node.next = l1 if l2 is None else l2
         break
 
       if l1.val <= l2.val:
-        ans.next = l1
+        _node.next = l1
         l1 = l1.next
       else:
-        ans.next = l2
+        _node.next = l2
         l2 = l2.next
 
-      ans = ans.next
+      _node = _node.next
 
     return head.next
