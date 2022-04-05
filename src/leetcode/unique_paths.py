@@ -30,6 +30,7 @@ class Solution:
 
   @staticmethod
   def unique_paths_dp(m: int, n: int) -> int:
+    # dynamic programming
     dp = [[0] * n for _ in range(m)]
 
     for i in range(m):
