@@ -32,7 +32,7 @@ from typing import List
 
 class Solution:
   @staticmethod
-  def k_closest(points: List[List[int]], k: int) -> List[List[int]]:
+  def kClosest(points: List[List[int]], k: int) -> List[List[int]]:
     ans = []
 
     distances = []

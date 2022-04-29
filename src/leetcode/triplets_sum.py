@@ -11,7 +11,7 @@ from typing import List
 
 class Solution:
   @staticmethod
-  def three_sum(arr: List[int]) -> List[List[int]]:
+  def threeSum(arr: List[int]) -> List[List[int]]:
     target = 0
     ans = []  # for answer list
     ls: List[str] = []  # a string list for checking unique format: "a:b:c"

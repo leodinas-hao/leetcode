@@ -41,7 +41,8 @@ class ListNode:
 
 
 class Solution:
-  def add_2_lists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+  @staticmethod
+  def add2Lists(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
     '''
     :param l1 [ListNode]
     :param l2 [ListNode]

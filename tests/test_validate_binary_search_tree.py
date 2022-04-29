@@ -38,5 +38,5 @@ def to_tree(nums: List[int]) -> TreeNode:
   ([5, 4, 6, None, None, 3, 7], False),
 ])
 def test_validate_bst(nums, ans):
-  res = Solution.is_valid_bst(to_tree(nums))
+  res = Solution.isValidBST(to_tree(nums))
   assert res == ans

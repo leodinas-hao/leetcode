@@ -10,7 +10,7 @@ from leetcode.parentheses import Solution
 ])
 def test_parentheses(num, expt):
   sol = Solution()
-  result = sol.generate_parenthesis(num)
+  result = sol.generateParenthesis(num)
 
   assert len(result) == len(expt)
   for s in result:

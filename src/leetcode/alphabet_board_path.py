@@ -66,7 +66,7 @@ class Solution:
 
     return path
 
-  def alphabet_board_path(self, target: str) -> str:
+  def alphabetBoardPath(self, target: str) -> str:
     path = ''
     _from = 'a'
 

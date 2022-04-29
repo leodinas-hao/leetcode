@@ -9,5 +9,5 @@ from leetcode.minimum_initial_energy_to_finish_tasks import Solution
   ([[1, 7], [2, 8], [3, 9], [4, 10], [5, 11], [6, 12]], 27),
 ])
 def test_minimum_energy(tasks, ans):
-  res = Solution.minimum_effort(tasks)
+  res = Solution.minimumEffort(tasks)
   assert res == ans

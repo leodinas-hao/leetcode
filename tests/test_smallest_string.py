@@ -10,5 +10,5 @@ from leetcode.smallest_string_with_a_given_numeric_value import Solution
   (1, 1, 'a'),
 ])
 def test_smallest_string(n, k, expt):
-  result = Solution.get_smallest_string(n, k)
+  result = Solution.getSmallestString(n, k)
   assert result == expt

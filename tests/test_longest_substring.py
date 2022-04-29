@@ -10,7 +10,7 @@ from leetcode.longest_substring import Solution
   ['assdesstd', 3]
 ])
 def test_longest_substring(s, len):
-  result = Solution.length_of_longest_substring(s)
+  result = Solution.lengthOfLongestSubstring(s)
   assert result == len
 
 
@@ -22,5 +22,5 @@ def test_longest_substring(s, len):
   ['dvdf', 3]
 ])
 def test_longest_substring_2(s, len):
-  result = Solution.length_of_longest_substring_2(s)
+  result = Solution.lengthOfLongestSubstring2(s)
   assert result == len

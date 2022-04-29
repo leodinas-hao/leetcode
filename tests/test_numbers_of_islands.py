@@ -25,5 +25,5 @@ from leetcode.numbers_of_islands import Solution
 ])
 def test_numbers_of_islands(grid, ans):
   solution = Solution()
-  res = solution.num_islands(grid)
+  res = solution.numIslands(grid)
   assert res == ans

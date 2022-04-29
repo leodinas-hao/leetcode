@@ -41,17 +41,17 @@ from typing import List
 class Solution:
 
   @staticmethod
-  def prison_after_n_days(cells: List[int], n: int) -> List[int]:
+  def prisonAfterNDays(cells: List[int], n: int) -> List[int]:
 
-    cell_count = len(cells)
+    cellCount = len(cells)
     yesterday = cells
     today = []
 
-    for i in range(1, n + 1):
+    for _ in range(1, n + 1):
       # 1st cell always 0
       today = [0]
 
-      for p in range(1, cell_count - 1):
+      for p in range(1, cellCount - 1):
         today.append(1 if yesterday[p - 1] + yesterday[p + 1] != 1 else 0)
 
       # last cell always 0

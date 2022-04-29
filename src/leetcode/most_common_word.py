@@ -26,16 +26,16 @@ import re
 
 class Solution:
   @staticmethod
-  def most_common_word(paragraph: str, banned: List[str]) -> str:
+  def mostCommonWord(paragraph: str, banned: List[str]) -> str:
 
-    all_words = re.findall(r'\w+', paragraph.lower())
+    allWords = re.findall(r'\w+', paragraph.lower())
     # filter banned ones & remove duplicate
-    words = list(dict.fromkeys([word for word in all_words if word not in banned]))
+    words = list(dict.fromkeys([word for word in allWords if word not in banned]))
 
     max = 0
     most = None
     for word in words:
-      count = all_words.count(word)
+      count = allWords.count(word)
       if count > max:
         most = word
         max = count

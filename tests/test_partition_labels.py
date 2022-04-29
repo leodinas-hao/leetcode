@@ -9,8 +9,7 @@ from leetcode.partition_labels import Solution
   ('abcd', [1, 1, 1, 1]),
 ])
 def test_partition_lables(s, expt):
-  sol = Solution()
-  result = sol.partition_labels(s)
+  result = Solution.partitionLabels(s)
   assert len(result) == len(expt)
   for i in range(0, len(result)):
     assert result[i] == expt[i]

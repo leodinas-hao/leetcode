@@ -10,7 +10,7 @@ from leetcode.reorder_logs import Solution
   )
 ])
 def test_reorder_logs(logs, ans):
-  res = Solution.order_logs(logs)
+  res = Solution.orderLogs(logs)
   assert len(res) == len(ans)
 
   for i in range(0, len(res)):

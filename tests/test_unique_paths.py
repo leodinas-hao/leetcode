@@ -8,7 +8,7 @@ from leetcode.unique_paths import Solution
   (3, 2, 3),
 ])
 def test_unique_paths(m, n, ans):
-  res = Solution.unique_paths(m, n)
+  res = Solution.uniquePaths(m, n)
   assert res == ans
 
 
@@ -17,5 +17,5 @@ def test_unique_paths(m, n, ans):
   (3, 2, 3),
 ])
 def test_unique_paths_dp(m, n, ans):
-  res = Solution.unique_paths_dp(m, n)
+  res = Solution.uniquePathsDP(m, n)
   assert res == ans

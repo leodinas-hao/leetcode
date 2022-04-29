@@ -11,7 +11,7 @@ from leetcode.roman_numbers_to_integer import Solution
   ('MCMXCIV', 1994),
 ])
 def test_roman_to_int(s, i):
-  ans = Solution.roman_to_int(s)
+  ans = Solution.roman2Int(s)
   assert ans == i
 
 
@@ -22,5 +22,5 @@ def test_roman_to_int(s, i):
   (1994, 'MCMXCIV'),
 ])
 def test_int_to_roman(i, s):
-  ans = Solution.int_to_roman(i)
+  ans = Solution.int2Roman(i)
   assert ans == s

@@ -9,6 +9,6 @@ from leetcode.k_radius_subarray_averages import Solution
   ([8], 100000, [-1]),
 ])
 def test_k_avg(nums, k, ans):
-  res = Solution.get_averages(nums, k)
+  res = Solution.getAverages(nums, k)
   for i in range(0, len(res)):
     assert res[i] == ans[i]

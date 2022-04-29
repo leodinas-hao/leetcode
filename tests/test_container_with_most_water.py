@@ -9,5 +9,5 @@ from leetcode.container_with_most_water import Solution
   ([1, 2, 4, 3], 4)
 ])
 def test_container_with_most_water(height, ans):
-  res = Solution.max_area(height)
+  res = Solution.maxArea(height)
   assert ans == res

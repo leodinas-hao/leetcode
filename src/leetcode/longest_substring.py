@@ -34,7 +34,7 @@ from typing import Dict
 class Solution:
 
   @staticmethod
-  def length_of_longest_substring_2(s: str) -> int:
+  def lengthOfLongestSubstring2(s: str) -> int:
     if len(s) < 2:
       return len(s)
 
@@ -56,16 +56,16 @@ class Solution:
     return longest
 
   @staticmethod
-  def length_of_longest_substring(s: str) -> int:
+  def lengthOfLongestSubstring(s: str) -> int:
     longest = 0
     pos = 0
-    char_pos: Dict[str, int] = defaultdict(lambda: 0)  # to avoid key error
+    charPos: Dict[str, int] = defaultdict(lambda: 0)  # to avoid key error
 
     for i in range(len(s)):
-      while char_pos[s[i]] != 0:
-        char_pos[s[pos]] -= 1
+      while charPos[s[i]] != 0:
+        charPos[s[pos]] -= 1
         pos += 1
-      char_pos[s[i]] += 1
+      charPos[s[i]] += 1
       longest = max(longest, i - pos + 1)
 
     return longest

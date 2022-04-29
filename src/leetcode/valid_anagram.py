@@ -25,12 +25,12 @@ from collections import Counter
 
 class Solution:
   @staticmethod
-  def is_anagram(s: str, t: str) -> bool:
+  def isAnagram(s: str, t: str) -> bool:
 
     return Counter(s) == Counter(t)
 
   @staticmethod
-  def is_anagram_2(s: str, t: str) -> bool:
+  def isAnagram2(s: str, t: str) -> bool:
 
     if len(s) != len(t):
       return False

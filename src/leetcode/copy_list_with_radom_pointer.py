@@ -57,7 +57,7 @@ class Solution:
 
   hmap = {}
 
-  def copy_radmon_list_r(self, head: Optional[Node]) -> Optional[Node]:
+  def copyRadmonListR(self, head: Optional[Node]) -> Optional[Node]:
     '''recursively copy the node'''
 
     if head is None:
@@ -69,13 +69,13 @@ class Solution:
     copy = Node(head.val)
 
     self.hmap[head] = copy
-    copy.next = self.copy_radmon_list_r(head.next)
-    copy.random = self.copy_radmon_list_r(head.random)
+    copy.next = self.copyRadmonListR(head.next)
+    copy.random = self.copyRadmonListR(head.random)
 
     return copy
 
-  def copy_random_list(self, head: Optional[Node]) -> Optional[Node]:
-    '''iterate the old node to copy one by one 
+  def copyRandomList(self, head: Optional[Node]) -> Optional[Node]:
+    '''iterate the old node to copy one by one
     with hashmap to ensure not duplicating the copied node
     '''
 

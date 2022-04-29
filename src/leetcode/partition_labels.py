@@ -30,7 +30,8 @@ from typing import List
 
 class Solution:
 
-  def partition_labels(self, s: str) -> List[int]:
+  @staticmethod
+  def partitionLabels(s: str) -> List[int]:
     # mark the last occurrence of each letter
     last = {c: i for i, c in enumerate(s)}
     j = anchor = 0

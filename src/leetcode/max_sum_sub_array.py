@@ -28,12 +28,12 @@ from typing import List
 class Solution:
 
   @staticmethod
-  def max_subarray(nums: List[int]) -> int:
-    cur_sum = nums[0]
-    max_sum = nums[0]
+  def maxSubarray(nums: List[int]) -> int:
+    curSum = nums[0]
+    maxSum = nums[0]
 
     for num in nums[1:]:
-      cur_sum = max(num, num + cur_sum)
-      max_sum = max(max_sum, cur_sum)
+      curSum = max(num, num + curSum)
+      maxSum = max(maxSum, curSum)
 
-    return max_sum
+    return maxSum

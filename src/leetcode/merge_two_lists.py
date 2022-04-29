@@ -19,7 +19,7 @@ class ListNode:
 
 class Solution:
   @staticmethod
-  def merge_two_lists(l1: ListNode, l2: ListNode) -> ListNode:
+  def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
     head = ListNode(0)  # dummy head
     _node = head
 

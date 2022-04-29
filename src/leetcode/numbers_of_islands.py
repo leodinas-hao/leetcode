@@ -56,7 +56,7 @@ class Solution:
     self._dfs(grid, x, y + 1)
     self._dfs(grid, x, y - 1)
 
-  def num_islands(self, grid: List[List[str]]) -> int:
+  def numIslands(self, grid: List[List[str]]) -> int:
     ans = 0
 
     for y in range(len(grid)):

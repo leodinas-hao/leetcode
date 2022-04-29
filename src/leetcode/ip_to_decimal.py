@@ -14,13 +14,13 @@ import ipaddress
 class Solution:
 
   @staticmethod
-  def to_int(ip: str) -> int:
+  def toInt(ip: str) -> int:
 
     octets = [int(i) for i in ip.split('.')]
     return octets[0] * 256 * 256 * 256 + octets[1] * 256 * 256 + octets[2] * 256 + octets[3]
 
   @staticmethod
-  def to_int_2(ip: str) -> int:
+  def toInt2(ip: str) -> int:
     '''https://docs.python.org/3/library/ipaddress.html#conversion-to-strings-and-integers'''
 
     return int(ipaddress.IPv4Address(ip))

@@ -35,7 +35,7 @@ class TreeNode:
 
 class Solution:
   @staticmethod
-  def is_valid_bst(root: Optional[TreeNode]) -> bool:
+  def isValidBST(root: Optional[TreeNode]) -> bool:
     def _check(node: TreeNode, left: int, right: int) -> bool:
       if node is None:
         return True

@@ -8,4 +8,4 @@ from leetcode.ip_to_decimal import Solution
   '10.9.8.7',
 ])
 def test_ip_to_decimal(ip):
-  assert Solution.to_int(ip) == Solution.to_int_2(ip)
+  assert Solution.toInt(ip) == Solution.toInt2(ip)

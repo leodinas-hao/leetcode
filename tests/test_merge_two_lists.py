@@ -20,7 +20,7 @@ def make_list_node(nums: List[int]):
   ([1, 2, 4], [1, 3, 4], [1, 1, 2, 3, 4, 4]),
 ])
 def test_merge_2_lists(l1, l2, ans):
-  res = Solution.merge_two_lists(make_list_node(l1), make_list_node(l2))
+  res = Solution.mergeTwoLists(make_list_node(l1), make_list_node(l2))
 
   for i in ans:
     assert i == res.val

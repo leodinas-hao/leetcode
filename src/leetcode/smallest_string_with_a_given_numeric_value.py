@@ -29,7 +29,7 @@ n <= k <= 26 * n
 class Solution:
 
   @staticmethod
-  def get_smallest_string(n: int, k: int) -> str:
+  def getSmallestString(n: int, k: int) -> str:
     result = ['a' for _ in range(n)]
     k -= n
 

@@ -10,7 +10,7 @@ from leetcode.convert_sorted_array_to_binary_search_tree import Solution, TreeNo
   [2, 4, 6],
 ])
 def test_convert_sorted_array_to_bst(nums):
-  bst = Solution().sorted_array_to_bst(nums)
+  bst = Solution().sortedArrayToBST(nums)
   left = right = 0
   assert bst.val in nums
 

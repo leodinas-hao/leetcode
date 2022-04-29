@@ -54,7 +54,7 @@ from typing import List
 
 class Solution:
   @staticmethod
-  def minimum_effort(tasks: List[List[int]]) -> int:
+  def minimumEffort(tasks: List[List[int]]) -> int:
     # sort the tasks by putting the bigger gap between `actual` and `minimum` at the end
     tasks.sort(key=lambda t: t[1] - t[0])
 

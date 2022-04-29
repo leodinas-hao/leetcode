@@ -38,16 +38,16 @@ class Solution:
     ans.append([intervals[0][0], intervals[0][1]])
 
     for _start, _end in intervals[1:]:
-      last_end = ans[-1][1]
+      lastEnd = ans[-1][1]
 
-      if last_end < _start:
+      if lastEnd < _start:
         # no overlapping, add to list
         ans.append([_start, _end])
-      elif last_end >= _start and last_end <= _end:
+      elif _start <= lastEnd <= _end:
         # overlapping with last, rewrite the last end
         ans[-1][1] = _end
       # else:
-      #   # last_end > current end
+      #   # lastEnd > current end
       #   # overlapping, but no change required
       #   pass
 

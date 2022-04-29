@@ -8,5 +8,5 @@ from leetcode.unique_paths_2 import Solution
   ([[0, 1], [0, 0]], 1)
 ])
 def test_unique_paths_2(grid, ans):
-  res = Solution.unique_paths(grid)
+  res = Solution.uniquePaths(grid)
   assert res == ans

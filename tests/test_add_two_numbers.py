@@ -22,9 +22,8 @@ def make_list_node(nums: List[int]):
   ([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9], [8, 9, 9, 9, 0, 0, 0, 1]),
 ])
 def test_add_two_numbers(l1, l2, expt):
-  solution = Solution()
 
-  s = solution.add_2_lists(make_list_node(l1), make_list_node(l2))
+  s = Solution.add2Lists(make_list_node(l1), make_list_node(l2))
 
   for i in range(0, len(expt)):
     assert expt[i] == s.val

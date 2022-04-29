@@ -9,5 +9,5 @@ from leetcode.alphabet_board_path import Solution
 ])
 def test_alphabet_board_path(target, ans):
   solution = Solution()
-  res = solution.alphabet_board_path(target)
+  res = solution.alphabetBoardPath(target)
   assert res == ans

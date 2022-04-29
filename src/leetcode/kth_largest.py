@@ -53,7 +53,7 @@ and insertions and binary searching to find insertion points, but the point is t
 In summary, a heap:
 
 Stores elements, and can find the smallest (min-heap) or largest (max-heap) element stored in O(1)O(1).
-Can add elements and remove the smallest (min-heap) or largest (max-heap) element in O(\log(n))O(log(n)).
+Can add elements and remove the smallest (min-heap) or largest (max-heap) element in O(log(n))O(log(n)).
 Can perform insertions and removals while always maintaining the first property.
 
 Algorithm

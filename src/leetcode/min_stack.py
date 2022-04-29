@@ -31,7 +31,7 @@ class MinStack:
   def min(self):
     return self._mins[-1] if self._mins else sys.maxsize
 
-  def get_min(self):
+  def getMin(self):
     return self.min
 
   def push(self, i: int):

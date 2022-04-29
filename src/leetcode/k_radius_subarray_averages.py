@@ -32,7 +32,7 @@ Explanation:
 Example 3:
 Input: nums = [8], k = 100000
 Output: [-1]
-Explanation: 
+Explanation:
 - avg[0] is -1 because there are less than k elements before and after index 0.
 
 Constraints:
@@ -46,7 +46,7 @@ from typing import List
 
 class Solution:
   @staticmethod
-  def get_averages(nums: List[int], k: int) -> List[int]:
+  def getAverages(nums: List[int], k: int) -> List[int]:
     length = len(nums)
     ans = [-1] * length
     size = k * 2 + 1

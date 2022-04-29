@@ -9,5 +9,5 @@ from leetcode.max_sum_sub_array import Solution
   ([5, 4, -1, 7, 8], 23),
 ])
 def test_max_sum_sub_array(nums, ans):
-  res = Solution.max_subarray(nums)
+  res = Solution.maxSubarray(nums)
   assert res == ans

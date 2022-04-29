@@ -8,5 +8,5 @@ from leetcode.valid_anagram import Solution
   ('rat', 'car', False),
 ])
 def test_valid_anagram(s, t, ans):
-  res = Solution.is_anagram(s, t)
+  res = Solution.isAnagram(s, t)
   assert res == ans

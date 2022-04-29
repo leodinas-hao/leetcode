@@ -33,7 +33,7 @@ from typing import List
 
 class Solution:
   @staticmethod
-  def unique_paths(grid: List[List[int]]) -> int:
+  def uniquePaths(grid: List[List[int]]) -> int:
 
     # edge case if grid[0][0] is obstacled, then return 0
     if grid[0][0] == 1:

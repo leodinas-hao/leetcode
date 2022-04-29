@@ -24,23 +24,23 @@ from typing import List
 class Solution:
 
   @staticmethod
-  def order_logs(logs: List[str]) -> List[str]:
+  def orderLogs(logs: List[str]) -> List[str]:
 
-    letter_logs = []
-    digit_logs = []
+    letterLogs = []
+    digitLogs = []
 
     for log in logs:
       if log[log.find(' ') + 1] < 'a':
-        digit_logs.append(log)
+        digitLogs.append(log)
       else:
-        letter_logs.append(log)
+        letterLogs.append(log)
 
     # sort letter logs
-    def sort_key(log: str) -> str:
+    def sortKey(log: str) -> str:
       [id, *words] = log.split()
       words.append(id)
       return ' '.join(words)
 
-    letter_logs.sort(key=sort_key)
+    letterLogs.sort(key=sortKey)
 
-    return letter_logs + digit_logs
+    return letterLogs + digitLogs

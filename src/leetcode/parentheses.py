@@ -41,7 +41,7 @@ class Solution:
     # next right
     self._dfs(left, right + 1, parentheses + ')')
 
-  def generate_parenthesis(self, n: int) -> List[str]:
+  def generateParenthesis(self, n: int) -> List[str]:
     self._num = n
     self._list = []
     # start here

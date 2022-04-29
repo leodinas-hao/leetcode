@@ -8,7 +8,7 @@ from leetcode.k_cloest_points_to_origin import Solution
   ([[3, 3], [5, -1], [-2, 4]], 2, [[3, 3], [-2, 4]])
 ])
 def test_k_cloest_points_to_origin(points, k, ans):
-  res = Solution.k_closest(points, k)
+  res = Solution.kClosest(points, k)
   assert len(res) == k
 
   for r in res:

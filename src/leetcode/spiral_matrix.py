@@ -32,12 +32,12 @@ from typing import List
 class Solution:
 
   @staticmethod
-  def generate_matrix(n: int) -> List[List[int]]:
+  def generateMatrix(n: int) -> List[List[int]]:
 
     # init matrix with 0
     matrix = [[0] * n for _ in range(n)]
 
-    dir = [
+    dirs = [
       [0, 1],  # go right
       [1, 0],  # go down
       [0, -1],  # go left
@@ -48,14 +48,14 @@ class Solution:
     for i in range(n * n):
       matrix[row][col] = i + 1
 
-      next_row = dir[dc][0] + row
-      next_col = dir[dc][1] + col
+      next_row = dirs[dc][0] + row
+      next_col = dirs[dc][1] + col
 
       if next_row >= n or next_col >= n or matrix[next_row][next_col] != 0:
         # dc = dc + 1 if dc < 3 else 0
         dc = (dc + 1) % 4
-        row += dir[dc][0]
-        col += dir[dc][1]
+        row += dirs[dc][0]
+        col += dirs[dc][1]
       else:
         row = next_row
         col = next_col
