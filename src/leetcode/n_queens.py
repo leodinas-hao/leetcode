@@ -23,7 +23,7 @@ Constraints:
 1 <= n <= 9
 '''
 
-from typing import List, Optional
+from typing import List
 
 
 class Solution:
@@ -31,10 +31,16 @@ class Solution:
   EMPTY = '.'
   QUEEN = 'Q'
 
+  def __init__(self):
+
+    # keep a reference of board size
+    self.size = 0
+
   def createBoard(self, n: int) -> List[List[bool]]:
     ''' creates a board with all empty spaces
     True indicating Queen taken the place, otherwise not
     '''
+    self.size = n
     return [[False] * n for _ in range(n)]
 
   def printBoard(self, board: List[List[bool]]) -> List[str]:
@@ -52,8 +58,7 @@ class Solution:
     in another word, there is no other queen at horizontal/vertical/diagonal directions
     '''
 
-    n = len(board)
-    for i in range(n):
+    for i in range(self.size):
       # horizontal or vertical
       if board[r][i] or board[i][c]:
         return False
@@ -65,23 +70,27 @@ class Solution:
       right = c + i + 1
       if up >= 0 and left >= 0 and board[up][left]:
         return False
-      if up >= 0 and right < n and board[up][right]:
+      if up >= 0 and right < self.size and board[up][right]:
         return False
-      if down < n and left >= 0 and board[down][left]:
+      if down < self.size and left >= 0 and board[down][left]:
         return False
-      if down < n and right < n and board[down][right]:
+      if down < self.size and right < self.size and board[down][right]:
         return False
 
     return True
 
-  def placeQueens(self, board, pos: int) -> bool:
-    '''start placing queens at the given position
-    returns True if board filled with n queens, otherwise False
-    '''
-
-    queens = 0
-
-    return queens == len(board)
+  def solve(self, solutions, board, col):
+    if col == self.size:
+      solutions.append(self.printBoard(board))
+    else:
+      for row in range(self.size):
+        if self.isSafe(board, row, col):
+          board[row][col] = True
+          self.solve(solutions, board, col + 1)
+          board[row][col] = False
 
   def solveNQueens(self, n: int) -> List[List[str]]:
-    pass
+    solutions = []
+    board = self.createBoard(n)
+    self.solve(solutions, board, 0)
+    return solutions
