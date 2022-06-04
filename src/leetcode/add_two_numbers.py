@@ -11,6 +11,10 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 Examples:
 
 1).
+3<-4<-2
+4<-6<-5
+-------
+8<-0<-7
 Input: l1 = [2,4,3], l2 = [5,6,4]
 Output: [7,0,8]
 Explanation: 342 + 465 = 807.
@@ -20,6 +24,11 @@ Input: l1 = [0], l2 = [0]
 Output: [0]
 
 3).
+   9<-9<-9<-9<-9<-9<-9
+            9<-9<-9<-9
+----------------------
+1<-0<-0<-0<-9<-9<-9<-8
+
 Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 Output: [8,9,9,9,0,0,0,1]
 
